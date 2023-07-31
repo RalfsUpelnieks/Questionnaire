@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Questionnaire</title>
+</head>
+<body>
+    <div class="panel">
+        <div id="game" class="hidden">
+            <div class="question">
+                <h1 id="question">Questionnaire</h1>
+            </div>
+            <div class="answers">
+                <button class="button answer" data-number="1">Answer 1</button>
+                <button class="button answer" data-number="2">Answer 2</button>
+                <button class="button answer" data-number="3">Answer 3</button>
+                <button class="button answer" data-number="4">Answer 4</button>
+            </div>
+            <p id="progressText" class="progress">1 / 10</p>
+        </div>
+        <div id="endScreen" class="endScreen hidden"> 
+            <h1 id="score">Congradulations! You answered 0/10<br>questions correctly.</h1>
+            <button class="button" onclick="startGame()">Play 1 more time</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
